@@ -1,0 +1,236 @@
+body {
+    background-image: url("./xpediabgg.jpg");
+    background-size: cover;
+  font-family: 'Verdana', helvetica, arial, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  color: #ffe0b2;
+  display: inline-block;
+  text-align: center;
+}
+
+.wiki-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #ffe0b2;
+}
+
+.random {
+  display: block;
+  position: relative;
+  top: -10px;
+  font-size: 14px;
+}
+
+.random:hover {
+  color: #89F0F0;
+}
+
+::-webkit-input-placeholder {
+  color: #89F0F0;
+}
+
+.wiki-title {
+  font-family: "Sedan SC", serif;
+  color: red;
+  background-color: none;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 48px;
+  margin-top: 1.5em;
+}
+
+.pre-awesome-line {
+  text-align: center;
+  margin: 30px auto;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, #393939), color-stop(50%, #ff5a09), color-stop(75%, #393939));
+  /* Chrome,Safari4+ */
+  
+  background: -moz-linear-gradient(left, #393939 25%, #ff5a09 50%, #393939 75%);
+  /* FF3.6+ */
+  
+  background: -webkit-linear-gradient(left, #1e5799 25%, #69dd2a 50%, #207cca 75%);
+  /* Chrome10+,Safari5.1+ */
+  
+  background: -o-linear-gradient(left, #393939 25%, #ff5a09 50%, #393939 75%);
+  /* Opera 11.10+ */
+  
+  background: -ms-linear-gradient(left, #393939 25%, #ff5a09 50%, #393939 75%);
+  /* IE10+ */
+  
+  background: linear-gradient(to right, #393939 25%, #ff5a09 50%, #393939 75%);
+  /* W3C */
+}
+
+.post-awesome-line {
+  margin-left: 150px;
+  margin-top: 30px;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #ff5a09), color-stop(35%, #393939));
+  /* Chrome,Safari4+ */
+  
+  background: -moz-linear-gradient(left, #ff5a09 0%, #393939 35%);
+  /* FF3.6+ */
+  
+  background: -webkit-linear-gradient(left, #69dd2a 0%, #207cca 35%);
+  /* Chrome10+,Safari5.1+ */
+  
+  background: -o-linear-gradient(left, #ff5a09 0%, #393939 35%);
+  /* Opera 11.10+ */
+  
+  background: -ms-linear-gradient(left, #ff5a09 0%, #393939 35%);
+  /* IE10+ */
+  
+  background: linear-gradient(to right, #ff5a09 0%, #393939 35%);
+  /* W3C */
+  
+  opacity: 0;
+}
+
+form {
+  display: inline-block;
+  margin: 35px auto;
+}
+
+.search {
+  background-color: transparent;
+  box-shadow: 0 2px 0 #89F0F0;
+  display: block;
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  text-shadow: 0 -1px 0 #161616;
+}
+
+input {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  border: 4px solid red;
+  border-radius: 10px 0 0 5px;
+  color: red;
+  backdrop-filter: blur(4px);
+  padding: 0 10px;
+  width: 80vh;
+}
+
+input:hover {
+  border: 1px solid #89F0F0;
+  width: 100vh;
+  height: fit-content;
+}
+
+input:focus {
+  border: 1px solid #89F0F0;
+  box-shadow: none;
+  outline: 0 none;
+}
+
+button {
+  border: 1px solid #9b9b9b;
+  border-radius: 0 5px 5px 0;
+  border-left-color: #161616;
+  color: #ffe0b2;
+  background-color: red;
+  padding: 0;
+  position: relative;
+  left: 0;
+  width: 80px;
+}
+
+button:hover {
+  color: #89F0F0;
+}
+
+button:focus {
+  box-shadow: 0 2px 0 #161616;
+  outline: 0 none;
+}
+
+.results {
+  width: 75%;
+  margin-top: 25px;
+  margin-left: 110px;
+  list-style: none;
+  float: left;
+}
+
+li {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-weight: normal;
+}
+
+.title {
+  font-weight: bold;
+  color: #89F0F0;
+}
+
+#header {
+  text-align: right;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+
+#header > a:hover {
+  color: #89F0F0;
+}
+
+.ui-autocomplete,
+.ui-menu,
+.ui-menu-item {
+  font-family: 'Cabin', helvetica, arial, sans-serif;
+  background-color: #606060;
+  color: #ffe0b2;
+  border-color: #ff9900;
+  border-radius: 5px 5px 0 0;
+}
+
+.ui-state-hover,
+.ui-autocomplete li:hover {
+  display: block;
+  color: #89F0F0;
+  background: #6e6e6e;
+  outline: none;
+  border: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
